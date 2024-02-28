@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+.body {
+    background: linear-gradient(to bottom, #ffffff 30%, #a39e9e6c) ;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    color: #6D6D6D;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;   
+    margin-bottom: 10vh;
+    font-size: 300%;
+
+}
+
+.hr {
+    width: 10vw;
+    color: #6d6d6d74;
+}
+
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+}
+
+.img {
+    width: 350px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    color: black;
+    max-width: 50%;
+    min-width: 30%;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 1225px) {
+
+    
+    .img {
+        max-width: 300px;
+    }
+
+    .text {
+        font-size: 20px; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .body {
+        overflow-y: scroll;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+    .img {
+        width: 200%;
+    }
+
+    .text {
+        font-size: 20px; 
+        margin-top: 35px;
+        max-width: 70%;
+
+    }
+}

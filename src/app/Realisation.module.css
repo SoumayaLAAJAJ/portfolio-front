@@ -1,0 +1,311 @@
+.title {
+    text-align: center;
+    color: #353535;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;   
+    margin-bottom: 10vh;
+    font-size: 300%;
+    padding-top: 100px;
+}
+
+.hr {
+    width: 10vw;
+    color: #6d6d6d74;
+    margin-bottom: 50px;
+}
+
+.main {
+    background-color: #a39e9e4f;
+    width: 100vw;
+    height: auto;
+    margin-top: 10px;
+
+}
+
+.cardMiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 480px;
+    height: 340px;
+
+
+}
+
+
+    .img {
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    }
+    
+
+
+    .flipCard {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+        /* flex-basis: calc(33.33% - 20px); Trois cartes par ligne avec une marge de 20px entre elles */
+        margin-bottom: 20px; 
+    }
+    
+    .flipCardInner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    
+    .flipCard.flipped .flipCardInner {
+        transform: rotateY(180deg);
+    }
+    
+    .flipCardFront,
+    .flipCardBack {
+        position: absolute;
+        backface-visibility: hidden;
+
+    }
+    
+    .flipCardFront {
+        /* background-color: #bbb; */
+        width: 90%;
+        height: 90%;
+
+    }
+    
+    .flipCardBack {
+        background-color: #ffffff;
+        color: #463e3e;
+        transform: rotateY(180deg);
+        width: 350px;
+        height: 90%;
+        padding: 11px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 100px;
+    }
+
+    .backContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .content {
+        margin-left: 200px;    
+    }
+
+    /* @media (max-width: 1285px) {
+        .flipCard {
+            flex-basis: calc(44.22% - 20px);
+        }
+    } */
+
+    .title {
+    text-align: center;
+    color: #353535;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;   
+    margin-bottom: 10vh;
+    font-size: 300%;
+    padding-top: 100px;
+}
+
+.hr {
+    width: 10vw;
+    color: #6d6d6d74;
+    margin-bottom: 50px;
+}
+
+.main {
+    background-color: #a39e9e4f;
+    width: 100vw;
+    height: auto;
+    margin-top: 10px;
+}
+
+.cardMiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 480px;
+    height: 340px;
+
+
+}
+
+
+    .img {
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    }
+    
+
+
+    .flipCard {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+        flex-basis: calc(33.33% - 20px); /* Trois cartes par ligne avec une marge de 20px entre elles */
+        margin-bottom: 20px; 
+    }
+    
+    .flipCardInner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    
+    .flipCard.flipped .flipCardInner {
+        transform: rotateY(180deg);
+    }
+    
+    .flipCardFront,
+    .flipCardBack {
+        position: absolute;
+        backface-visibility: hidden;
+
+    }
+    
+    .flipCardFront {
+        /* background-color: #bbb; */
+        width: 90%;
+        height: 90%;
+
+    }
+    
+    .flipCardBack {
+        background-color: #ffffff;
+        color: #463e3e;
+        transform: rotateY(180deg);
+        width: 350px;
+        height: 90%;
+        padding: 11px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 100px;
+    }
+
+    .backContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .content {
+        margin-left: 10%;    
+    }
+
+
+    /* MEDIAQUERIES */
+
+    
+    
+    @media (max-width: 985px) {
+        .content {
+            margin-left: 10%;
+        }
+    }
+    
+    @media (max-width: 930px) {
+        .content {
+            width: 90%;
+            margin-left: 10%;
+        }
+        
+    }
+    @media (max-width: 899px) {
+        .content {
+            margin-left: 30%;
+        }
+    }
+    
+    @media (max-width: 658px) {
+        .content {
+            margin-left: 20%;
+        }
+    }
+
+
+    @media (max-width: 485px) {
+        .flipCardBack {
+          width: 90%; /* Réduire la largeur de la carte à 90% de la largeur de son conteneur */
+          max-width: 300px; /* Limiter la largeur maximale de la carte à 300 pixels */
+          padding: 5px; /* Réduire le remplissage de la carte */
+          box-sizing: border-box; /* Assurer que le remplissage est inclus dans la largeur définie */
+        }
+      
+        .flipCardFront, .flipCardBack {
+          width: 100%; /* Adapter la largeur des faces des cartes */
+          max-width: 300px; /* Limiter la largeur maximale des faces des cartes à 300 pixels */
+        }
+      
+        .img {
+          width: 100%; /* Adapter la largeur de l'image */
+          max-width: 100%; /* Limiter la largeur maximale de l'image */
+          height: auto; /* Permettre à la hauteur de l'image de s'ajuster automatiquement */
+        }
+      
+        .buttons {
+          width: 100%; /* Adapter la largeur des boutons */
+        }
+    
+
+        .content {
+            margin-left: 20%;
+        }
+      }
+      
+    
+      @media (max-width: 435px) {
+          .content {
+              margin-left: 15%;
+          }
+      }
+
+      @media (max-width: 360px) {
+        .content {
+            margin-left: 2%;
+        }
+    }

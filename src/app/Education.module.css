@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+.title {
+    color: #6D6D6D;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;   
+    margin-bottom: 10vh;
+    font-size: 300%;
+
+}
+
+.hr {
+    width: 10vw;
+    color: #6d6d6d74;
+}
+
+.horizontalLine {
+    width: 300px;
+    height: 2px;
+    background-color: #cccccc7a;
+}
+
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+}
+
+.img, .secondImg {
+    width: 10vh;
+    border-radius: 50%;
+    box-shadow: -10px -10px 2px rgba(197, 190, 190, 0.442);
+} 
+
+.secondImg {
+    margin-right: 40px;
+}
+
+.logoBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgDiv {
+    margin-right: 40px;
+}
+
+
+.line {
+    width: 2px;
+    height: 200px;
+    background-color: #cccccc7a;
+
+}
+
+.logoLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    width: 300px;
+}
+
+
+.isNotMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.date {
+    font-style: italic;
+}
+
+.school {
+    font-weight: bold;
+}
+
+.seeMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seeMoreText {
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 10px;
+    font-weight: 900;
+    color: #5e5d5d;
+}
+
+
+@media screen and (max-width: 1330px) {
+    .isNotMobile {
+        display: flex; /* Afficher le contenu pour les écrans larges */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .horizontalLine {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .seeMore {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logoBox {
+        width: 70%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .text {
+        font-size: 70%;
+        padding: 50px;
+    }
+}
