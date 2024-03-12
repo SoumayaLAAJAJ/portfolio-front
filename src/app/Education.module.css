@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+.body {
+    background-color: #ffffff;
+}
+
 .title {
     color: #6D6D6D;
     font-family: 'Inria Sans', sans-serif;

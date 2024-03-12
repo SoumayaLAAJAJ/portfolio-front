@@ -1,14 +1,19 @@
-import styles from "./globals.css";
-import Presentation from "./components/Presentation";
-import Skills from "./components/Skills";
-import Education from "./components/Education";
-import Realisation from "./components/Realisation";
-import ParticlesBackground from "./components/ParticlesBackground";
+"use client"
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import styles from "../Particles.module.css"
 
-export default function Home() {
+function ParticlesBackground({ options, applyOptions, children }) {
+  const particlesInit = (engine) => {
+    loadFull(engine);
+  };
 
-  const options = {
-    autoPlay: true,
+
+  return (
+    <div className={styles.text}>
+       {applyOptions && (
+      <Particles init={particlesInit} options={{
+  autoPlay: true,
   background: {
     color: {
       value: "#fff"
@@ -531,15 +536,18 @@ export default function Home() {
   themes: [],
   zLayers: 100,
   emitters: []
-  }
+}} />
+)}
+{children}
 
-  return (
-    <main className={styles.main}>
-        <ParticlesBackground options={ options } applyOptions={true}/>
-        <Presentation />
-      <Skills />
-      <Education />
-      <Realisation />
-    </main>
+
+      <h1 className={styles.h1}>Développeuse web passionnée par l’élégance du code et l’art du design</h1>
+
+      <h2 className={styles.h2} >
+        
+        De la conception au code, je mets en oeuvre votre vision digitale
+      </h2>
+    </div>
   );
 }
+export default ParticlesBackground;

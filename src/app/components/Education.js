@@ -14,7 +14,7 @@ export default function Education() {
     };
 
     return (
-        <div>
+        <div className={styles.body}>
             <div className={styles.titlebox}>
                 <h2 className={styles.title}>Parcours</h2>
                 <hr className={styles.hr}></hr>

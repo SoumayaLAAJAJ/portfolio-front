@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 .title {
     text-align: center;
     color: #353535;
     font-family: 'Inria Sans', sans-serif;
-    font-weight: 300;   
+    font-weight: bold; 
     margin-bottom: 10vh;
     font-size: 300%;
     padding-top: 100px;
@@ -15,7 +17,7 @@
 }
 
 .main {
-    background-color: #a39e9e4f;
+    background-color: #5a5151;
     width: 100vw;
     height: auto;
     margin-top: 10px;
@@ -81,16 +83,17 @@
     .flipCardBack {
         background-color: #ffffff;
         color: #463e3e;
+        font-family: "Inria Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         transform: rotateY(180deg);
         width: 350px;
         height: 90%;
         padding: 11px;
         border-radius: 20px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-
-
     }
+
     
     .cards {
         display: flex;
@@ -99,16 +102,16 @@
         padding: 100px;
     }
 
-    .backContent {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     .buttons {
         display: flex;
         justify-content: space-between;
         width: 350px;
+    }
+
+    .button, .button:hover {
+        color: #1b1a1abe; 
+        border: 1px solid #3535358b;
     }
 
     .content {
@@ -173,6 +176,7 @@
         perspective: 1000px;
         flex-basis: calc(33.33% - 20px); /* Trois cartes par ligne avec une marge de 20px entre elles */
         margin-bottom: 20px; 
+
     }
     
     .flipCardInner {
@@ -190,6 +194,7 @@
     .flipCardBack {
         position: absolute;
         backface-visibility: hidden;
+    
 
     }
     
@@ -221,16 +226,17 @@
         padding: 100px;
     }
 
-    .backContent {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .backContent > p,
+    .backContent > h5
+    {
+        margin: 0; 
     }
 
     .buttons {
         display: flex;
         justify-content: space-between;
         width: 350px;
+        margin-top: 12px;
     }
 
     .content {
