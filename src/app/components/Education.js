@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import styles from "../Education.module.css";
-import Logos from './Logos';
+import Experience from './Experience';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
@@ -14,14 +14,14 @@ export default function Education() {
     };
 
     return (
-        <div className={styles.body}>
+        <div >
             <div className={styles.titlebox}>
                 <h2 className={styles.title}>Parcours</h2>
                 <hr className={styles.hr}></hr>
             </div>
-            <div>
-                <Logos/>
-            </div>
+            
+            <Experience/>
+           
             <div className={styles.seeMore}>
                 <p className={styles.seeMoreText}>Pour en savoir plus sur mes expériences professionnelles avant ma reconversion</p>
                 <div>

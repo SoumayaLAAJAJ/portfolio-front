@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.rights {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500;
+}
+
+.svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(3);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 270px;
+    margin-top: 20px; 
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.socials {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .socials a {
+    font-size: 24px;
+  }
+  
+  .links {
+    gap: 10px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .legal {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  @media (width > 420px) {
+    .section {
+      align-items: center;
+      padding-left: 0;
+      gap: 20px;
+    }
+  
+    .links {
+      gap: 20px;
+    }
+  }

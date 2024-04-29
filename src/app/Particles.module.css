@@ -8,12 +8,21 @@
 }
 
 .h1 {
-    font-size: 3rem;
+    font-size: 50px;
     text-align: center;
+    padding: 50px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 600;
+
 }
 
 .h2 {
-    font-size: 2rem;
+    font-size: 35px;
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500;
+
 
 }
